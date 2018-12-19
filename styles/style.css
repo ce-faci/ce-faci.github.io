@@ -6,10 +6,11 @@ header {
 }
 header .limba {
 	font-size: 20px;
-	float: right;
+	float: left;
 	font-weight: bold;
 	color: white;
 	padding: 5px;
+	margin: 0;
 	margin-bottom: 50px;
 	text-decoration: none;
 	transition: 0.5s;
@@ -135,6 +136,7 @@ footer .copyright-content a {
 @media screen and (max-width: 991px) {
 	header .container .logo {
 		margin-top: 10px;
+		margin-bottom: 20px;
 	}
 	header .container .name {
 	    margin-top: 0;
