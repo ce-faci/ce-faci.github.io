@@ -36,7 +36,7 @@ header .video-copyright {
 .post-content .title {
 	text-align: center;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 	margin-left: 5px;
 	margin-right: 5px;
 	font-size: 45px;
@@ -87,8 +87,8 @@ header .video-copyright {
 	width: 150px;
 }
 .post-content .product .product-link {
-	text-align: center;
-	margin-top: 50px;
+	margin-top: 30px;
+	margin-left: 65px;
 }
 .post-content .product a {
 	font-size: 25px;
@@ -102,12 +102,18 @@ header .video-copyright {
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-shadow: 0px 4px 4px grey;
+	position: absolute;
+}
+.post-content .product a:hover {
+	background-image: none;
+	transition: 1s;
+	color: black;
+	border: 2px dotted;
 }
 .post-content .product a:active {
 	box-shadow: 0px 2px 4px grey;
-}
-.post-content .product .product-link:active {
-	margin-top: 52px;
+	margin-top: 2px;
+	transition: 0s;
 }
 .post-content .feedback {
 	font-size: 50px;
@@ -226,6 +232,9 @@ footer .copyright-content a {
         background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
 	}
+	.post-content .title {
+		font-size: 40px;
+	}
 }
 @media screen and (max-width: 525px) {
 	header .laptop {
@@ -237,6 +246,9 @@ footer .copyright-content a {
 	margin-top: -1000px;
 	margin-bottom: 120px;
 }
+    .post-content .title {
+		font-size: 35px;
+	}
 }
 @media screen and (max-width: 500px) {
 	header .container .name {
@@ -260,5 +272,8 @@ footer .copyright-content a {
 	height: 109px;
 	margin-top: -1000px;
 	margin-bottom: 90px;
-}
+    }
+    .post-content .title {
+		font-size: 30px;
+	}
 }
