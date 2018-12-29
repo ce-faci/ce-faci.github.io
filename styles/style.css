@@ -37,7 +37,9 @@ header .video-copyright {
 	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	font-size: 40px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 45px;
 	font-weight: bold;
 	font-family: 'Cuprum', sans-serif;
 }
