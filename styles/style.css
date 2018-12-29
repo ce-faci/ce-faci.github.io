@@ -33,13 +33,20 @@ header .video-copyright {
 	border-radius: 10px;
 	background: white;
 }
+.post-content .title {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: 'Cuprum', sans-serif;
+}
 .post-content .product {
 	height: 400px;
 	width: 280px;
 	margin-top: 25px;
 	margin-bottom: 25px;
-	border-radius: 15px;
-	border: 2px solid grey;
+	border: 10px solid #E5E5E5;
 	margin-left: auto;
 	margin-right: auto;
 	transition: 0.5s;
@@ -47,6 +54,58 @@ header .video-copyright {
 .post-content .product:hover {
 	box-shadow: 0px 0px 10px grey;
 	transition: 0.5s;
+}
+.post-content .product img {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+.post-content .product p {
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: 'Cuprum', sans-serif;
+}
+.post-content .product1 p {
+	margin-top: 40px;
+}
+.post-content .product2 p {
+	margin-top: 28px;
+}
+.post-content .product2 img {
+	width: 170px;
+}
+.post-content .product3 p {
+	margin-top: 23px;
+}
+.post-content .product3 img {
+	width: 150px;
+}
+.post-content .product .product-link {
+	text-align: center;
+	margin-top: 50px;
+}
+.post-content .product a {
+	font-size: 25px;
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+	border: 2px solid black;
+	font-family: 'Cuprum', sans-serif;
+	border-radius: 15px;
+	background-image: url('../img/background-product.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0px 4px 4px grey;
+}
+.post-content .product a:active {
+	box-shadow: 0px 2px 4px grey;
+}
+.post-content .product .product-link:active {
+	margin-top: 52px;
 }
 .post-content .feedback {
 	font-size: 50px;
