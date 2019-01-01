@@ -33,6 +33,17 @@ header .video-copyright {
 	border-radius: 10px;
 	background: white;
 }
+.post-content .prev {
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 20px;
+	width: 40px;
+	transition: 0.5s;
+}
+.post-content .prev:hover {
+	transform: rotate(-360deg);
+	transition: 0.5s;
+}
 .post-content .title {
 	text-align: center;
 	margin-top: 50px;
@@ -187,7 +198,6 @@ footer .copyright-content a {
 	}
 	.post-content .text1 {
 		margin-top: 0;
-		font-size: 17px;
 	}
 }
 @media screen and (max-width: 525px) {
