@@ -72,7 +72,7 @@ header .video-copyright {
 	font-family: 'Cuprum', sans-serif;
 }
 .post-content .product1 p {
-	margin-top: 40px;
+	margin-top: 9px;
 }
 .post-content .product2 p {
 	margin-top: 28px;
@@ -88,29 +88,20 @@ header .video-copyright {
 }
 .post-content .product .product-link {
 	margin-top: 30px;
-	margin-left: 65px;
+	margin-left: 53px;
 }
 .post-content .product a {
-	font-size: 25px;
+	font-size: 20px;
 	text-decoration: none;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding: 2px;
+	padding-right: 35px;
+	padding-left: 35px;
 	color: white;
-	border: 2px solid black;
-	font-family: 'Cuprum', sans-serif;
+	background: #0066CC;
 	border-radius: 15px;
-	background-image: url('../img/background-product.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	box-shadow: 0px 4px 4px grey;
+	font-family: 'Cuprum', sans-serif;
 	position: absolute;
-	transition: 0s;
-}
-.post-content .product a:hover {
-	background-image: none;
-	transition: 1s;
-	color: black;
-	border: 2px dotted;
+	box-shadow: 0px 4px 4px grey;
 }
 .post-content .product a:active {
 	box-shadow: 0px 2px 4px grey;
