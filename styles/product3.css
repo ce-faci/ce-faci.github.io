@@ -203,6 +203,15 @@ footer .copyright-content a {
 	.post-content .prev:hover {
 		transform: none;
 	}
+	.post-content .text2 {
+		font-size: 15px;
+	}
+	.post-content .text2 img {
+		width: 80px;
+	}
+	.post-content .text2 img:hover {
+		transform: none;
+	}
 }
 @media screen and (max-width: 525px) {
 	header .laptop {
