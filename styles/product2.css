@@ -25,7 +25,7 @@
 	margin: auto;
 }
 .active {
-	display: inline-block;
+	display: initial;
 }
 header {
 	background-image: url('../img/header-img.jpg');
@@ -233,6 +233,12 @@ footer .copyright-content a {
 	}
 	.post-content .text2 img:hover {
 		transform: none;
+	}
+	.btn-up {
+		bottom: 20px;
+		right: 20px;
+		width: 45px;
+		height: 45px;
 	}
 }
 @media screen and (max-width: 525px) {

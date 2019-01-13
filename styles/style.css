@@ -81,7 +81,7 @@
 	margin: auto;
 }
 .active {
-	display: inline-block;
+	display: initial;
 }
 header {
 	background-image: url('../img/header-img.jpg');
