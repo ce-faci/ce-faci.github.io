@@ -3,7 +3,9 @@ $(window).on( "load", function() {
         	$('#page-preloader').removeClass('done');
         	setTimeout(function() {
         		$('#page-preloader').addClass('done');
-        		$('#preloader').addClass('done');
+        	}, 2000);
+        	setTimeout(function() {
+        		$('.preloader').addClass('done');
         	}, 3000);
         }
     });

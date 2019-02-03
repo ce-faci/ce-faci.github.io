@@ -9,11 +9,9 @@
 	transition: 1s all;
 	opacity: 1;
 	visibility: visible;
-}
-#page-preloader {
 	transition: 1s;
 }
-#preloader {
+#page-preloader {
 	transition: 1s;
 }
 .loader {
