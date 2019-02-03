@@ -10,6 +10,12 @@
 	opacity: 1;
 	visibility: visible;
 }
+#page-preloader {
+	transition: 1s;
+}
+#preloader {
+	transition: 1s;
+}
 .loader {
 	border: 2px solid transparent;
 	border-radius: 50%;
@@ -45,6 +51,7 @@
 .done {
 	opacity: 0;
 	visibility: hidden;
+	transition: 1s;
 }
 @keyframes preload-animation {
 	from {
