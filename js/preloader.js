@@ -6,6 +6,7 @@ $(window).on( "load", function() {
         	}, 2000);
         	setTimeout(function() {
         		$('.preloader').addClass('done');
+        		$('#hide').removeClass('hide');
         	}, 3000);
         }
     });
