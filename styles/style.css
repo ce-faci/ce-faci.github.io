@@ -9,7 +9,6 @@
 	transition: 1s all;
 	opacity: 1;
 	visibility: visible;
-	transition: 1s;
 }
 #page-preloader {
 	transition: 1s;
