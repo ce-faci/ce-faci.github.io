@@ -1,6 +1,3 @@
-.hide {
-	display: none;
-}
 .preloader {
 	position: fixed;
 	left: 0;
@@ -197,7 +194,6 @@ header .video-copyright {
 .post-content .text2 {
 	font-family: monospace;
 	font-size: 17px;
-	margin-top: 50px;
 	text-align: center;
 }
 .post-content .text2 img {
