@@ -1,3 +1,7 @@
-RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTPS/
-RewriteRule ^index\.html$ https://https://thereisnothingimpossible.tk/ [R=301,L]
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME}\.html -f 
+RewriteRule ^(.*)$ $1.html
+Redirect 301 /index.html https://thereisnothingimpossible.tk/
+Redirect 301 /product1.html https://thereisnothingimpossible.tk/product1
+Redirect 301 /product2.html https://thereisnothingimpossible.tk/product2
+Redirect 301 /product3.html https://thereisnothingimpossible.tk/product3
