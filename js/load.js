@@ -1,4 +1,6 @@
 $(window).on( "load", function() {
-	$('body').removeClass('load');
-	$('body').addClass('load2');
+	setTimeout(function() {
+		$('body').removeClass('load');
+	    $('body').addClass('load2');
+	}, 250);
 });

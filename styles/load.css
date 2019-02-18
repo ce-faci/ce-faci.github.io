@@ -1,0 +1,14 @@
+.load {
+	display: none;
+}
+.load2 {
+	animation: 2s preload;
+}
+@keyframes preload {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
