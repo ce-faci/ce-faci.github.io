@@ -1,0 +1,1 @@
+$(document).pjax('.logo', '.b1', '.b2');
