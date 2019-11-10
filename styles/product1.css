@@ -96,70 +96,12 @@ header .video-copyright {
 	text-align: center;
 }
 .post-content .text2 img {
-	width: 60px;
+	width: 45px;
 	transition: 0.5s;
 }
 .post-content .text2 img:hover {
 	transform: rotate(360deg);
 	transition: 0.5s;
-}
-.post-content .feedback {
-	font-size: 50px;
-	font-family: 'Cuprum', sans-serif;
-	margin-left: 20px;
-}
-.post-content .switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 23px;
-  margin-top: 30px;
-}
-
-.post-content .switch input {display:none;}
-
-.post-content .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 20px;
-  background-color: #2196F3;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.post-content .slider:before {
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  left: 4px;
-  bottom: 4px;
-  border-radius: 50%;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.post-content input:checked + .slider {
-  background-color: #2196F3;
-}
-
-.post-content input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-.post-content input:checked + .slider:before {
-  -webkit-transform: translateX(17px);
-  -ms-transform: translateX(17px);
-  transform: translateX(17px);
-}
-.switch-img {
-	margin-top: -25px;
-	width: 40px;
 }
 footer {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
@@ -173,6 +115,7 @@ footer {
 footer .copyright-content {
 	color: white;
 	margin: 0;
+	padding-top: 3px;
 	padding-bottom: 5px;
 }
 footer .copyright-content a {
