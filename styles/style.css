@@ -178,6 +178,7 @@ header .statement p::selection {
 	font-weight: bold;
 	color: white;
 	transition: .3s;
+	margin-top: 20px;
 }
 .post-content .more:hover {
 	box-shadow: 0 0 15px rgb(255, 81, 81);
