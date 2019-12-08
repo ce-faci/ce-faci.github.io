@@ -2,14 +2,15 @@
 	position: fixed;
 	bottom: 30px;
 	right: 40px;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
-	border: 2px solid grey;
-	background: black;
+	border: 1px solid red;
+	background: grey;
 	z-index: 99;
 	outline: none;
 	display: none;
+	opacity: 0.5;
 }
 .btn-up:after {
 	content: '';
@@ -28,33 +29,75 @@
 .active {
 	display: initial;
 }
-header {
-	background-image: url('../img/header-img.webp');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+header .name {
+	height: 50px; 
+	margin-top: -18px;
 }
-header .logo {
-	width: 100%;
-	background: #E5E5E5;
+header .navbar .container .navbar-collapse ul li a {
+	font-size: 20px;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	font-family: 'Cuprum', sans-serif;
+	transition: 0.2s;
 }
-header .laptop {
-	width: 750px;
+header .navbar .container .navbar-collapse ul li a:hover {
+	color: red;
+	transition: 0.2s;
 }
-header .video {
-	width: 580px;
-	height: 320px;
+header .navbar .container .navbar-collapse ul li {
+	float: none;
+	display: inline-block;
+}
+header .navbar .container .navbar-collapse ul {
+	float: none;
+	text-align: center;
+}
+header .navbar-default {
+	background: white;
 	border: none;
-	margin-top: -1000px;
-	margin-bottom: 242px;
-	-webkit-clip-path: polygon(1% 0, 99% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(1% 0, 99% 0, 100% 100%, 0% 100%);
+	box-shadow: none;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-radius: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
 }
-header .video-copyright {
-	position: absolute;
-	margin-left: 710px;
-	margin-top: -115px;
-	font-size: 15px;
+.between {
+	border: 2px solid #2961C1;
+    width: 60px;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+header .statement {
+	width: 100%;
+	height: 40px;
+	background: #0099ff;
+	position: fixed;
+	z-index: 1;
+	margin-top: 65px;
+	box-shadow: 0px 3px 2px 0px rgba(50, 50, 50, 0.41);
+}
+header .statement p {
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Cuprum', sans-serif;
+	margin: 12px;
+	font-size: 12px;
+}
+header .statement p::selection {
+	background: black;
+}
+.post-content {
+	background: white;
+	margin-top: 105px;
 }
 .post-content .title {
 	text-align: center;
@@ -66,91 +109,79 @@ header .video-copyright {
 	font-weight: bold;
 	font-family: 'Cuprum', sans-serif;
 }
+.post-content .velo-img {
+	margin-top: 20px;
+	border-radius: 50px;
+}
 .post-content .text {
 	font-family: monospace;
 	font-size: 17px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 28px;
 }
-.post-content .text1 {
-	margin-top: 60px;
+.post-content ul {
+	list-style-type: none;
+}
+.post-content .share-block {
+	margin-top: 50px;
+}
+.post-content .share-text {
+	font-size: 19px;
+	font-weight: bold;
+	font-family: 'Cuprum', sans-serif;
 	text-align: center;
 }
-.post-content .product {
-	height: 400px;
-	width: 280px;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	border: 10px solid #E5E5E5;
-	margin-left: auto;
-	margin-right: auto;
-	transition: 0.5s;
-}
-.post-content .product:hover {
-	box-shadow: 0px 0px 10px grey;
-	transition: 0.5s;
-}
-.post-content .product img {
-	width: 200px;
+.post-content .new {
+	position: relative;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	margin-top: 20px;
-	border-radius: 20px;
+	margin-bottom: 25px;
+	transition: .3s;
+	cursor: pointer;
 }
-.post-content .product p {
-	text-align: center;
-	font-size: 35px;
+.post-content .new img {
+	width: auto;
+	min-width: 250px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+.post-content .new a {
+	font-family: 'Cuprum', sans-serif;
 	font-weight: bold;
-	font-family: 'Cuprum', sans-serif;
-}
-.post-content .product1 p {
-	margin-top: 9px;
-}
-.post-content .product2 p {
-	margin-top: 28px;
-}
-.post-content .product2 img {
-	width: 170px;
-}
-.post-content .product3 p {
-	margin-top: 23px;
-}
-.post-content .product3 img {
-	width: 150px;
-}
-.post-content .product .product-link {
-	margin-top: 30px;
-	margin-left: 53px;
-}
-.post-content .product a {
-	font-size: 20px;
+	font-size: 16px;
 	text-decoration: none;
-	padding: 2px;
-	padding-right: 35px;
-	padding-left: 35px;
-	color: white;
-	background: #0066CC;
-	border-radius: 15px;
+	color: black;
+	transition: .3s;
+}
+.post-content .new a:hover {
+	color: #0099ff;
+	transition: .3s;
+}
+.post-content .new p {
 	font-family: 'Cuprum', sans-serif;
-	position: absolute;
-	box-shadow: 0px 4px 4px grey;
+	color: red;
 }
-.post-content .product a:active {
-	box-shadow: 0px 2px 4px grey;
-	margin-top: 2px;
-	transition: 0s;
+.post-content .more {
+	background: rgb(255, 81, 81);
+	text-decoration: none;
+	border-radius: 30px;
+	padding: 8px;
+	padding-right: 22px;
+	padding-left: 22px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-family: 'Cuprum', sans-serif;
+	font-weight: bold;
+	color: white;
+	transition: .3s;
 }
-.post-content .text2 {
-	font-family: monospace;
-	font-size: 17px;
-	text-align: center;
-}
-.post-content .text2 img {
-	width: 100px;
-	transition: 0.5s;
-}
-.post-content .text2 img:hover {
-	transform: rotate(360deg);
-	transition: 0.5s;
+.post-content .more:hover {
+	box-shadow: 0 0 15px rgb(255, 81, 81);
+	transition: .3s;
 }
 footer {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
@@ -161,84 +192,61 @@ footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
     position: relative;
 }
-footer .container a img {
-	width: 50px;
-	margin: 0;
-	margin-top: 1px;
-	border-radius: 30px;
-	padding: 5px;
-}
-footer .copyright-content {
-	color: white;
-	margin: 0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-footer .copyright-content a {
-	color: white;
-	text-decoration: underline;
-}
 /*---------------------------------Адаптация-------------------------------------*/
 @media screen and (max-width: 1199px) {
-	header .video-copyright {
-		margin-left: 610px;
+	header .statement {
+		margin-top: 65px;
 	}
-	.post-content .text1 {
-		margin-top: 50px;
+	.post-content {
+		margin-top: 105px;
+	}
+	.post-content .new {
+		width: auto;
+	}
+	.post-content .new img {
+		width: auto;
+		max-width: 205px;
+		min-width: none;
 	}
 }
 @media screen and (max-width: 991px) {
-	header .video-copyright {
-		margin-left: 500px;
+	header .statement {
+		margin-top: 98px;
 	}
-	.post-content .text1 {
-		margin-top: 35px;
+	.post-content {
+		margin-top: 140px;
+	}
+	.post-content .new {
+		width: 250px;
+	}
+	.post-content .new img {
+		width: 250px;
+		max-width: none;
 	}
 }
 @media screen and (max-width: 767px) {
-	header .laptop {
-		width: 500px;
+	header .statement {
+		margin-top: 65px;
 	}
-	header .video {
-	width: 387px;
-	height: 215px;
-	margin-top: -1000px;
-	margin-bottom: 165px;
-    }
-    header .br-copyright {
-    	display: none;
-    }
-    header .video-copyright {
-		position: relative;
+	header .navbar .container .navbar-collapse ul li {
+		display: block;
+	}
+	.navbar .navbar-header .navbar-toggle {
+		border: none;
+		background: transparent !important;
 		margin: 0;
-		margin-bottom: 10px;
-		border-radius: 5px;
-		margin-right: auto;
-		margin-left: auto;
-		margin-top: -17px;
-		width: 280px;
-		font-size: 13px;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfff4+0,dfe5d7+40,b3bead+100;Wax+3D+%233 */
-        background: #fcfff4; /* Old browsers */
-        background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+		margin-right: 3px;
+		margin-top: 7px;
 	}
-	.post-content .text1 {
-		margin-top: 0;
+	.navbar .navbar-header .navbar-toggle span {
+		border: 1px solid red;
+		width: 18px;
+	}
+	.post-content {
+		margin-top: 105px;
 	}
 	.post-content .title {
 		font-size: 40px;
-	}
-	.post-content .text2 {
-		font-size: 15px;
-	}
-	.post-content .text2 img {
-		width: 80px;
-	}
-	.post-content .text2 img:hover {
-		transform: none;
 	}
 	.btn-up {
 		bottom: 20px;
@@ -248,42 +256,11 @@ footer .copyright-content a {
 	}
 }
 @media screen and (max-width: 525px) {
-	header .laptop {
-		width: 350px;
-	}
-	header .video {
-	width: 270px;
-	height: 150px;
-	margin-top: -1000px;
-	margin-bottom: 120px;
-}
     .post-content .title {
 		font-size: 35px;
 	}
 }
-@media screen and (max-width: 500px) {
-	header .container .name {
-	    width: 320px;
-    }
-}
-@media screen and (max-width: 425px) {
-	header .container .name {
-	    width: 300px;
-    }
-}
 @media screen and (max-width: 375px) {
-	header .container .name {
-	    width: 245px;
-    }
-    header .laptop {
-    	width: 250px;
-    }
-    header .video {
-	width: 194px;
-	height: 109px;
-	margin-top: -1000px;
-	margin-bottom: 90px;
-    }
     .post-content .title {
 		font-size: 30px;
 	}
