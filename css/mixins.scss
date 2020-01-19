@@ -1,0 +1,7 @@
+@mixin alignCenter {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
