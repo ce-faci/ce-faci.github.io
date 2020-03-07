@@ -44,7 +44,7 @@
 
 
 
-h1, h2 {
+h1, h2, h3 {
     @include alignCenter;
 }
 
@@ -61,6 +61,19 @@ h2 {
     padding-left: 7px;
     padding-right: 7px;
 }
+h2 span {
+    color: red;
+    text-shadow: 0 0 3px red;
+}
+h3 {
+    font-family: 'Oswald', sans-serif;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-top: 125px !important;
+}
+.statistic {
+    margin-top: 50px;
+}
 .fb-comments {
     margin-top: 50px;
 }
@@ -72,11 +85,33 @@ h2 {
 
 
 
+@media screen and (max-width: 1199px)  {
+    h3 {
+        margin-top: 100px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 991px)  {
+    h3 {
+        margin-top: 60px !important;
+    }
+}
+
+
+
 @media screen and (max-width: 767px) {
     h1 {
         margin-top: 40px !important;
     }
     h2 {
         margin-top: 25px !important;
+    }
+    h3 {
+        margin-top: 10px !important;
+    }
+    .statistic {
+        margin-top: 100px;
     }
 }
